@@ -117,16 +117,17 @@ export default function TrackingPage() {
       }}
     >
       <div
-        style={{
-          maxWidth: isDesktop ? "none" : "480px",
-          margin: isDesktop ? 0 : "0 auto",
-          background: "#ffffff",
-          minHeight: "100%",
-          boxShadow: isDesktop ? "none" : "0 0 24px rgba(0,0,0,0.08)",
-          display: isDesktop ? "flex" : "block",
-          alignItems: isDesktop ? "stretch" : undefined,
-        }}
-      >
+  style={{
+    maxWidth: isDesktop ? "none" : "480px",
+    margin: isDesktop ? 0 : "0 auto",
+    background: "#ffffff",
+    minHeight: "100%",
+    paddingBottom: "120px", // added — extra breathing room at bottom of scroll
+    boxShadow: isDesktop ? "none" : "0 0 24px rgba(0,0,0,0.08)",
+    display: isDesktop ? "flex" : "block",
+    alignItems: isDesktop ? "stretch" : undefined,
+  }}
+>
         {/* Blue header / sidebar on desktop */}
         <div
           style={{
