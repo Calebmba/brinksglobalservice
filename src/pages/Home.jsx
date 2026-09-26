@@ -42,7 +42,7 @@ function Home() {
             display: 'flex',
             flexDirection: 'column',
             gap: '20px',
-            marginBottom: '120px', // now actually reserves scroll space before the footer
+            marginBottom: '100px', // now actually reserves scroll space before the footer
           }}
         >
           <TrackShipmentsCard />
