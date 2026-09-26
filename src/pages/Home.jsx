@@ -26,6 +26,7 @@ function Home() {
         style={{
           position: 'absolute',
           top: '80px', // clears the fixed navbar (adjust to match NAVBAR_HEIGHT)
+          bottom: '40px',
           right: '32px',
           display: 'flex',
           flexDirection: 'column',
