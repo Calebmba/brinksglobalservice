@@ -38,7 +38,7 @@ export default function TrackShipmentsCard() {
     <div
       style={{
         marginTop: "20px", 
-        marginRight: "28px",   
+        marginRight: "20px",   
         width: "288px",
         minHeight: "300px",
         boxSizing: "border-box",
