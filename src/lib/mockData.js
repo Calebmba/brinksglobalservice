@@ -27,7 +27,7 @@ export const shipment = {
   dates: {
     pickup: { label: "Actual", value: "2026-09-22 00:00" },
     delivery: { label: "Actual", value: "2026-09-22 12:30" },
-    liability: "100.00 USD",
+    liability: "",
   },
 
   trackingNumbers: ["000582914"],
