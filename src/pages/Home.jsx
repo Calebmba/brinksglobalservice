@@ -4,20 +4,24 @@ import LoginCard from '../components/home/LoginCard';
 
 function Home() {
   return (
-    <div
-      style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        backgroundImage: `url(${bgImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        zIndex: 1,
-      }}
-    >
+    <div style={{ position: 'relative', minHeight: '100vh' }}>
+      {/* Fixed background layer */}
+      <div
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundImage: `url(${bgImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          zIndex: -1,
+        }}
+      />
+
+      {/* Normal-flow content that scrolls over the background */}
       <div
         style={{
           position: 'absolute',
