@@ -25,7 +25,7 @@ export default function LoginCard({
         height: "330px",
         boxSizing: "border-box",
         background: "#ffffff",
-        borderRadius: "6px",
+        borderRadius: "0px",
         border: "1px solid #c0392b",
         boxShadow: "0 4px 16px rgba(0,0,0,0.15)",
         padding: "16px",
