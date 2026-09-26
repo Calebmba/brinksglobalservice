@@ -21,7 +21,6 @@ export default function LoginCard({
   return (
     <div
       style={{
-        marginBottom: "40px",
         width: "288px",
         height: "330px",
         boxSizing: "border-box",

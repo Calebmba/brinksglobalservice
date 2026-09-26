@@ -4,7 +4,14 @@ import LoginCard from '../components/home/LoginCard';
 
 function Home() {
   return (
-    <div style={{ position: 'relative', minHeight: '100vh' }}>
+    <div
+      style={{
+        position: 'relative',
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+    >
       {/* Fixed background layer */}
       <div
         style={{
@@ -21,20 +28,26 @@ function Home() {
         }}
       />
 
-      {/* Normal-flow content that scrolls over the background */}
+      {/* Content in normal flow, cards pushed to top-right */}
       <div
         style={{
-          position: 'absolute',
-          top: '80px', // clears the fixed navbar (adjust to match NAVBAR_HEIGHT)
-          bottom: '100px',
-          right: '32px',
           display: 'flex',
-          flexDirection: 'column',
-          gap: '20px',
+          justifyContent: 'flex-end',
+          paddingTop: '80px', // clears the fixed navbar
+          paddingRight: '32px',
         }}
       >
-        <TrackShipmentsCard />
-        <LoginCard />
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '20px',
+            marginBottom: '120px', // now actually reserves scroll space before the footer
+          }}
+        >
+          <TrackShipmentsCard />
+          <LoginCard />
+        </div>
       </div>
     </div>
   );
